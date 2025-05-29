@@ -19,13 +19,16 @@ const AboutCollection = () => {
 						тренувальним інструментом.
 					</p>
 					<p className='text-gray-300'>
-						Незалежно від вашого рівня - початківець чи професіонал - ці вправи
-						допоможуть вам вийти на новий рівень вокальної майстерності.
+						Незалежно від вашого рівня в екстремальному вокалі - початківець чи
+						професіонал - ці вправи допоможуть вам вийти на новий рівень
+						вокальної майстерності.
 					</p>
 
-					<button className='bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105 mt-12 max-sm:mx-auto block'>
-						Детальніше про марафон
-					</button>
+					<a href='https://fire-up-your-drive-ua.vercel.app/' target='_blank'>
+						<button className='bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105 mt-12 max-sm:mx-auto block'>
+							Детальніше про марафон
+						</button>
+					</a>
 				</div>
 
 				<div className='bg-gray-800 p-8 rounded-xl border border-purple-900/50'>
@@ -48,7 +51,7 @@ const AboutCollection = () => {
 							<span className='text-purple-400 mr-2'>✓</span>
 							<span>
 								Практика голосних, складів і фраз англійською та українською
-								мовами — для гнучкості артикуляції;
+								мовами — для відпрацювання всіх етапів роботи над технікою;
 							</span>
 						</li>
 						<li className='flex items-start'>

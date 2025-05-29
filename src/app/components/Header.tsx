@@ -36,14 +36,16 @@ const Header = () => {
 	return (
 		<header
 			className={`fixed w-full z-50 transition-all ${
-				isScrolled ? 'bg-gray-900/90 backdrop-blur-sm py-2' : 'py-4'
+				isScrolled || isMenuOpen
+					? 'bg-gray-900/90 backdrop-blur-sm py-2'
+					: 'py-4'
 			}`}
 		>
 			<div className='container mx-auto px-4'>
 				<div className='flex justify-between items-center'>
 					<Link
 						href='/'
-						className='text-neon-blue text-2xl font-bold hover:opacity-80 transition'
+						className='title text-2xl font-bold hover:opacity-80 transition'
 					>
 						Fire Up Your Drive
 					</Link>

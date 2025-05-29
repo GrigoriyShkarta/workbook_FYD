@@ -8,7 +8,7 @@ const Pricing = () => {
 					розвитку, який залишиться з вами назавжди
 				</p>
 
-				<div className='grid md:grid-cols-3 gap-8 max-w-5xl mx-auto'>
+				<div className='grid md:grid-cols-2 gap-8 max-w-5xl mx-auto'>
 					<div className='bg-gray-900 p-8 rounded-xl border border-gray-700'>
 						<h3 className='text-xl font-bold mb-4 text-center'>Базовий</h3>
 						<div className='text-center mb-6'>
@@ -74,7 +74,7 @@ const Pricing = () => {
 						</button>
 					</div>
 
-					<div className='bg-gray-900 p-8 rounded-xl border border-gray-700'>
+					{/* <div className='bg-gray-900 p-8 rounded-xl border border-gray-700'>
 						<h3 className='text-xl font-bold mb-4 text-center'>Преміум</h3>
 						<div className='text-center mb-6'>
 							<span className='text-4xl font-bold'>1299</span>
@@ -101,7 +101,7 @@ const Pricing = () => {
 						<button className='w-full py-3 bg-gray-700 hover:bg-gray-600 rounded-lg transition'>
 							Обрати
 						</button>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</section>

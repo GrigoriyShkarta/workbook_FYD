@@ -173,7 +173,7 @@ const ExerciseSamples = () => {
 						інструкціями та програмою тренувань
 					</p>
 					<button className='bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold py-3 px-8 rounded-full transition hover:opacity-90 hover:scale-105'>
-						Завантажити збірник
+						Отримати збірник
 					</button>
 				</div>
 			</div>

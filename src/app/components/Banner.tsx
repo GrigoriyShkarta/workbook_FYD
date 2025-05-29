@@ -5,16 +5,16 @@ const Banner = () => {
 	return (
 		<section className='relative py-20 overflow-hidden max-sm:pb-0'>
 			<div className='container mx-auto px-4 relative z-10 flex items-center max-sm:flex-col gap-10'>
-				<div className='max-w-3xl'>
-					<h2 className='text-neon-blue mb-6'>Розпали свій голос</h2>
-					<h1 className='text-5xl md:text-6xl font-bold mb-6'>
+				<div className='max-w-3xl max-sm:items-center flex flex-col'>
+					<h2 className=''>Rock Exercises</h2>
+					<h1 className='title text-5xl max-sm:text-[40px] font-bold mb-6 mt-10'>
 						Fire Up Your Drive
 					</h1>
-					<p className='text-xl text-gray-300 mb-8'>
-						20 унікальних вправ у рок-стилі для екстремального та сучасного
-						вокалу
+					<p className='text-xl text-gray-300 mb-8 max-sm:text-center'>
+						20 унікальних вправ у рок-стилі для тренування екстремальної
+						вокальної техніки “Drive”
 					</p>
-					<button className='bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105'>
+					<button className='max-w-[300px] bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105 max-sm:mx-auto'>
 						Отримати збірник
 					</button>
 				</div>

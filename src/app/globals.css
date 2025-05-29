@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'Breathing';
+	src: url('/fonts/Breathing.ttf') format('truetype');
+	font-style: normal;
+	font-display: swap;
+}
+
 @layer base {
 	h1,
 	h2,
@@ -25,4 +32,10 @@
 		color: #00f0ff;
 		text-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
 	}
+}
+
+.title {
+	font-family: 'Breathing', sans-serif;
+	color: #00f0ff;
+	text-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
 }
