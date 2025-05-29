@@ -12,30 +12,59 @@ const Pricing = () => {
 					<div className='bg-gray-900 p-8 rounded-xl border border-gray-700'>
 						<h3 className='text-xl font-bold mb-4 text-center'>Базовий</h3>
 						<div className='text-center mb-6'>
-							<span className='text-4xl font-bold'>499</span>
+							<span className='text-4xl font-bold'>1500</span>
 							<span className='text-gray-400'>₴</span>
 						</div>
 						<ul className='space-y-3 mb-8'>
 							<li className='flex items-start'>
 								<span className='text-purple-400 mr-2'>✓</span>
-								<span>20 аудіо-вправ</span>
+								<span>20 аудіо-вправ з демонстраціями та мінусівками</span>
 							</li>
 							<li className='flex items-start'>
 								<span className='text-purple-400 mr-2'>✓</span>
-								<span>Інструкції до вправ</span>
+								<span>
+									Унікальні вправи, адаптовані під рок стиль, які максимально
+									наближені до реального виконання пісень;
+								</span>
+							</li>
+							<li className='flex items-start'>
+								<span className='text-purple-400 mr-2'>✓</span>
+								<span>
+									Практика голосних, складів і фраз англійською та українською
+									мовами — для відпрацювання всіх етапів роботи над технікою;
+								</span>
+							</li>
+							<li className='flex items-start'>
+								<span className='text-purple-400 mr-2'>✓</span>
+								<span>
+									Структурована програма, що дозволяє опанувати техніку “Drive”
+									поступово, з чітким фокусом на відчуття та безпеку голосу;
+								</span>
+							</li>
+							<li className='flex items-start'>
+								<span className='text-purple-400 mr-2'>✓</span>
+								<span>
+									Mp3-файли, які можна легко знайти за QR-кодом для зручного
+									тренування у будь-який час;
+								</span>
+							</li>
+							<li className='flex items-start'>
+								<span className='text-purple-400 mr-2'>✓</span>
+								<span>
+									Pdf-збірник Доступ до закритого телеграм-каналу, де зібрані
+									всі матеріали;
+								</span>
 							</li>
 							<li className='flex items-start'>
 								<span className='text-gray-500 mr-2'>✗</span>
-								<span className='text-gray-500'>Програма тренувань</span>
-							</li>
-							<li className='flex items-start'>
-								<span className='text-gray-500 mr-2'>✗</span>
-								<span className='text-gray-500'>Доступ до спільноти</span>
+								<span className='text-gray-500'>Друкована версія збірника</span>
 							</li>
 						</ul>
-						<button className='w-full py-3 bg-gray-700 hover:bg-gray-600 rounded-lg transition'>
-							Обрати
-						</button>
+						<a href='https://t.me/yana_vocalcoach' target='_blank'>
+							<button className='w-full py-3 bg-gray-700 hover:bg-gray-600 rounded-lg transition'>
+								Обрати
+							</button>
+						</a>
 					</div>
 
 					<div className='bg-gray-900 p-8 rounded-xl border-2 border-purple-500 relative transform scale-105 z-10'>
@@ -44,34 +73,62 @@ const Pricing = () => {
 						</div>
 						<h3 className='text-xl font-bold mb-4 text-center'>Повний</h3>
 						<div className='text-center mb-6'>
-							<span className='text-4xl font-bold'>799</span>
+							<span className='text-4xl font-bold'>1750</span>
 							<span className='text-gray-400'>₴</span>
 						</div>
 						<ul className='space-y-3 mb-8'>
 							<li className='flex items-start'>
 								<span className='text-purple-400 mr-2'>✓</span>
-								<span>20 аудіо-вправ</span>
+								<span>20 аудіо-вправ з демонстраціями та мінусівками</span>
 							</li>
 							<li className='flex items-start'>
 								<span className='text-purple-400 mr-2'>✓</span>
-								<span>Детальні інструкції</span>
+								<span>
+									Унікальні вправи, адаптовані під рок стиль, які максимально
+									наближені до реального виконання пісень;
+								</span>
 							</li>
 							<li className='flex items-start'>
 								<span className='text-purple-400 mr-2'>✓</span>
-								<span>4-тижнева програма</span>
+								<span>
+									Практика голосних, складів і фраз англійською та українською
+									мовами — для відпрацювання всіх етапів роботи над технікою;
+								</span>
 							</li>
 							<li className='flex items-start'>
 								<span className='text-purple-400 mr-2'>✓</span>
-								<span>Доступ до спільноти</span>
+								<span>
+									Структурована програма, що дозволяє опанувати техніку “Drive”
+									поступово, з чітким фокусом на відчуття та безпеку голосу;
+								</span>
 							</li>
 							<li className='flex items-start'>
 								<span className='text-purple-400 mr-2'>✓</span>
-								<span>Бонус: поради з охорони голосу</span>
+								<span>
+									Mp3-файли, які можна легко знайти за QR-кодом для зручного
+									тренування у будь-який час;
+								</span>
+							</li>
+							<li className='flex items-start'>
+								<span className='text-purple-400 mr-2'>✓</span>
+								<span>
+									Pdf-збірник Доступ до закритого телеграм-каналу, де зібрані
+									всі матеріали;
+								</span>
+							</li>
+							<li className='flex items-start'>
+								<span className='text-purple-400 mr-2'>✓</span>
+								<span>
+									Друкована версія збірника (збір заявок для першого тиражу до
+									14 червня, відправка збірників після 20 червня).
+								</span>
 							</li>
 						</ul>
-						<button className='w-full py-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:opacity-90 rounded-lg transition'>
-							Обрати
-						</button>
+						<a href='https://t.me/yana_vocalcoach' target='_blank'>
+							<button className='w-full py-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:opacity-90 rounded-lg transition'>
+								Обрати
+							</button>
+						</a>
 					</div>
 
 					{/* <div className='bg-gray-900 p-8 rounded-xl border border-gray-700'>

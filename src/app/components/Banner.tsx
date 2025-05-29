@@ -14,9 +14,11 @@ const Banner = () => {
 						20 унікальних вправ у рок-стилі для тренування екстремальної
 						вокальної техніки “Drive”
 					</p>
-					<button className='max-w-[300px] bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105 max-sm:mx-auto'>
-						Отримати збірник
-					</button>
+					<a href='https://t.me/yana_vocalcoach' target='_blank'>
+						<button className='max-w-[300px] bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105 max-sm:mx-auto'>
+							Отримати збірник
+						</button>
+					</a>
 				</div>
 
 				<Image

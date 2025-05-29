@@ -7,14 +7,16 @@ const AboutAuthor: React.FC = () => {
 		<section id='author' className='py-20 container mx-auto px-4'>
 			<h2 className='text-neon-blue text-center mb-12'>Про автора</h2>
 
-			<div className='grid md:grid-cols-2 gap-12 items-center'>
+			<div className='flex gap-12 items-center max-sm:flex-col'>
 				<div className='flex justify-center h-full w-full max-sm:h-[400px]'>
-					<div className='relative w-full max-h-[500px]'>
+					<div className='w-full max-h-[500px]'>
 						<Image
 							src={ava}
 							alt='Автор збірника'
-							fill
-							className='rounded-xl w-full max-w-md border-2 border-purple-500/30'
+							width={360}
+							height={360}
+							className='relative rounded-xl w-full max-w-md border-2 border-purple-500/30'
+							// style={{ position: 'relative' }}
 						/>
 						{/* <div className=' -inset-4 border border-purple-500/20 rounded-xl -z-10'></div> */}
 					</div>
@@ -54,10 +56,6 @@ const AboutAuthor: React.FC = () => {
 						яка об’єднує мої знання, досвід і пристрасне бажання поділитися
 						ефективними методами тренувань з кожним, хто прагне вдосконалювати
 						свої навички.
-					</p>
-
-					<p className='text-gray-300 mb-4'>
-						Успішних тренувань, майбутня рок-зірка!
 					</p>
 
 					<div className='bg-gray-800 p-6 rounded-xl'>

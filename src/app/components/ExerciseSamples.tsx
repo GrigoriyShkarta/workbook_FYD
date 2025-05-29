@@ -6,7 +6,7 @@ const ExerciseSamples = () => {
 	const [activeExercise, setActiveExercise] = useState<number | null>(null)
 	const [currentTime, setCurrentTime] = useState<number[]>(Array(3).fill(0))
 	const [duration, setDuration] = useState<number[]>(Array(3).fill(0))
-	const audioRefs = useRef<(HTMLAudioElement | null)[]>([])
+	const audioRefs = useRef<(HTMLAudioElement | null)[]>(Array(3).fill(null))
 
 	const exercises = [
 		{
@@ -20,7 +20,7 @@ const ExerciseSamples = () => {
 			id: 2,
 			title: 'Вправа 2',
 			description: 'Розвиває високу тесситуру та контроль над скрімінгом',
-			demo: './audio/demo2.mp3',
+			demo: '/audio/demo2.mp3',
 		},
 		{
 			id: 3,
@@ -38,28 +38,40 @@ const ExerciseSamples = () => {
 			if (activeExercise !== null) {
 				audioRefs.current[activeExercise]?.pause()
 			}
-			audioRefs.current[index]?.play()
-			setActiveExercise(index)
+			const audio = audioRefs.current[index]
+			if (audio) {
+				audio.play().catch(error => console.error('Play error:', error))
+				setActiveExercise(index)
+			} else {
+				console.error('Audio ref is null for index:', index)
+			}
 		}
 	}
 
 	const handleTimeUpdate = (index: number) => {
 		if (audioRefs.current[index]) {
+			const current = audioRefs.current[index]!.currentTime
 			setCurrentTime(prev => {
 				const newTimes = [...prev]
-				newTimes[index] = audioRefs.current[index]?.currentTime || 0
+				newTimes[index] = current
 				return newTimes
 			})
+		} else {
+			console.error('Audio ref is null during time update for index:', index)
 		}
 	}
 
 	const handleLoadedMetadata = (index: number) => {
 		if (audioRefs.current[index]) {
+			const dur = audioRefs.current[index]!.duration
 			setDuration(prev => {
 				const newDurations = [...prev]
-				newDurations[index] = audioRefs.current[index]?.duration || 0
+				newDurations[index] = dur
 				return newDurations
 			})
+			console.log(`Duration loaded for index ${index}: ${dur} seconds`)
+		} else {
+			console.error('Audio ref is null during metadata load for index:', index)
 		}
 	}
 
@@ -95,6 +107,11 @@ const ExerciseSamples = () => {
 								onEnded={() => setActiveExercise(null)}
 								onTimeUpdate={() => handleTimeUpdate(index)}
 								onLoadedMetadata={() => handleLoadedMetadata(index)}
+								onError={() =>
+									console.error(
+										`Error loading audio for index ${index}: ${exercise.demo}`
+									)
+								}
 							/>
 
 							<div className='space-y-3'>
@@ -166,15 +183,17 @@ const ExerciseSamples = () => {
 
 				<div className='mt-16 text-center'>
 					<h3 className='text-2xl font-bold mb-4'>
-						Готові до наступного рівня?
+						Готові вийти на новий рівень?
 					</h3>
 					<p className='text-gray-400 mb-6 max-w-2xl mx-auto'>
 						Отримайте повний збірник з 20 професійними вправами, детальними
 						інструкціями та програмою тренувань
 					</p>
-					<button className='bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold py-3 px-8 rounded-full transition hover:opacity-90 hover:scale-105'>
-						Отримати збірник
-					</button>
+					<a href='https://t.me/yana_vocalcoach' target='_blank'>
+						<button className='bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold py-3 px-8 rounded-full transition hover:opacity-90 hover:scale-105'>
+							Отримати збірник
+						</button>
+					</a>
 				</div>
 			</div>
 		</section>

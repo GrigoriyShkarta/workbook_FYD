@@ -64,7 +64,7 @@ const AboutCollection = () => {
 						<li className='flex items-start'>
 							<span className='text-purple-400 mr-2'>✓</span>
 							<span>
-								Mp3-файли, які можна легко завантажити за QR-кодом для зручного
+								Mp3-файли, які можна легко знайти за QR-кодом для зручного
 								тренування у будь-який час.
 							</span>
 						</li>
