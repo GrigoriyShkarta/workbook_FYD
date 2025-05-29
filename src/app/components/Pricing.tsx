@@ -50,9 +50,12 @@ const Pricing = () => {
 							</li>
 							<li className='flex items-start'>
 								<span className='text-purple-400 mr-2'>✓</span>
+								<span>Pdf-збірник;</span>
+							</li>
+							<li className='flex items-start'>
+								<span className='text-purple-400 mr-2'>✓</span>
 								<span>
-									Pdf-збірник Доступ до закритого телеграм-каналу, де зібрані
-									всі матеріали;
+									Доступ до закритого телеграм-каналу, де зібрані всі матеріали;
 								</span>
 							</li>
 							<li className='flex items-start'>
@@ -111,9 +114,12 @@ const Pricing = () => {
 							</li>
 							<li className='flex items-start'>
 								<span className='text-purple-400 mr-2'>✓</span>
+								<span>Pdf-збірник;</span>
+							</li>
+							<li className='flex items-start'>
+								<span className='text-purple-400 mr-2'>✓</span>
 								<span>
-									Pdf-збірник Доступ до закритого телеграм-каналу, де зібрані
-									всі матеріали;
+									Доступ до закритого телеграм-каналу, де зібрані всі матеріали;
 								</span>
 							</li>
 							<li className='flex items-start'>

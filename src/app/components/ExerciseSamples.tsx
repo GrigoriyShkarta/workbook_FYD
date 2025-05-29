@@ -54,6 +54,9 @@ const ExerciseSamples = () => {
 			setCurrentTime(prev => {
 				const newTimes = [...prev]
 				newTimes[index] = current
+				console.log(
+					`Time update for index ${index}: ${current} / ${duration[index]}`
+				)
 				return newTimes
 			})
 		} else {
@@ -67,9 +70,9 @@ const ExerciseSamples = () => {
 			setDuration(prev => {
 				const newDurations = [...prev]
 				newDurations[index] = dur
+				console.log(`Duration loaded for index ${index}: ${dur} seconds`)
 				return newDurations
 			})
-			console.log(`Duration loaded for index ${index}: ${dur} seconds`)
 		} else {
 			console.error('Audio ref is null during metadata load for index:', index)
 		}
@@ -154,10 +157,10 @@ const ExerciseSamples = () => {
 										)}
 									</button>
 
-									<div className='flex-1 mx-4'>
-										<div className='h-1 bg-gray-700 rounded-full overflow-hidden'>
+									<div className='flex-1 mx-4 min-w-[100px]'>
+										<div className='h-2 bg-gray-700 rounded-full overflow-hidden'>
 											<div
-												className='h-full bg-purple-500'
+												className='h-full bg-purple-500 transition-all duration-200'
 												style={{
 													width:
 														duration[index] > 0
