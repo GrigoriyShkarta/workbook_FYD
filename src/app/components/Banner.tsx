@@ -3,7 +3,7 @@ import workbook from '@/assets/workbook.jpg'
 
 const Banner = () => {
 	return (
-		<section className='relative py-20 overflow-hidden max-sm:pb-0'>
+		<section className='relative py-20 overflow-hidden max-sm:pb-0 max-sm:pt-5'>
 			<div className='container mx-auto px-4 relative z-10 flex items-center max-sm:flex-col gap-10'>
 				<div className='max-w-3xl max-sm:items-center flex flex-col'>
 					<h2 className=''>Rock Exercises</h2>

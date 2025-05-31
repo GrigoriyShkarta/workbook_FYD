@@ -15,14 +15,30 @@ const Header = () => {
 			}
 		}
 
-		// Эффект для изменения хедера при скролле
 		const handleScroll = () => {
-			if (window.scrollY > 10) {
+			const scrollY = window.scrollY
+			const bannerHeight = 100 // <-- Тут можна поставити реальну висоту банера (px)
+			const isMobile = window.innerWidth < 768
+
+			if (scrollY > 10) {
 				setIsScrolled(true)
 			} else {
 				setIsScrolled(false)
 			}
+
+			// Приховати хедер, якщо мобільна версія і ще в межах банера
+			if (isMobile) {
+				if (scrollY < bannerHeight) {
+					document.body.classList.add('hide-mobile-header')
+				} else {
+					document.body.classList.remove('hide-mobile-header')
+				}
+			} else {
+				document.body.classList.remove('hide-mobile-header')
+			}
 		}
+
+		handleScroll() // Виклик при завантаженні
 
 		window.addEventListener('resize', handleResize)
 		window.addEventListener('scroll', handleScroll)
