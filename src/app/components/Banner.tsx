@@ -7,7 +7,7 @@ const Banner = () => {
 			<div className='container mx-auto px-4 relative z-10 flex items-center max-sm:flex-col gap-10'>
 				<div className='max-w-3xl max-sm:items-center flex flex-col'>
 					<h2 className=''>Rock Exercises</h2>
-					<h1 className='title text-5xl max-sm:text-[40px] font-bold mb-6 mt-10 max-sm:text-4xl'>
+					<h1 className='title text-5xl max-sm:text-[40px] font-bold mb-6 mt-10 text-nowrap max-sm:text-4xl'>
 						Fire Up Your Drive
 					</h1>
 					<p className='text-xl text-gray-300 mb-8 max-sm:text-center'>
