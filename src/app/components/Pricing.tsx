@@ -8,9 +8,9 @@ const Pricing = () => {
 					розвитку, який залишиться з вами назавжди
 				</p>
 
-				<div className='grid md:grid-cols-2 gap-8 max-w-5xl mx-auto'>
+				<div className='grid md:grid-cols-1 gap-8 max-w-3xl mx-auto'>
 					<div className='bg-gray-900 p-8 rounded-xl border border-gray-700'>
-						<h3 className='text-xl font-bold mb-4 text-center'>Базовий</h3>
+						<h3 className='text-xl font-bold mb-4 text-center'>ЦІНА</h3>
 						<div className='text-center mb-6'>
 							<span className='text-4xl font-bold'>1500</span>
 							<span className='text-gray-400'>₴</span>
@@ -58,19 +58,15 @@ const Pricing = () => {
 									Доступ до закритого телеграм-каналу, де зібрані всі матеріали;
 								</span>
 							</li>
-							<li className='flex items-start'>
-								<span className='text-gray-500 mr-2'>✗</span>
-								<span className='text-gray-500'>Друкована версія збірника</span>
-							</li>
 						</ul>
 						<a href='https://t.me/yana_vocalcoach' target='_blank'>
-							<button className='w-full py-3 bg-gray-700 hover:bg-gray-600 rounded-lg transition'>
+							<button className='w-full py-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:opacity-90 rounded-lg transition'>
 								Обрати
 							</button>
 						</a>
 					</div>
 
-					<div className='bg-gray-900 p-8 rounded-xl border-2 border-purple-500 relative transform scale-105 z-10'>
+					{/* <div className='bg-gray-900 p-8 rounded-xl border-2 border-purple-500 relative transform scale-105 z-10'>
 						<div className='absolute top-0 right-0 bg-purple-600 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg'>
 							НАЙКРАЩИЙ ВИБІР
 						</div>
@@ -135,7 +131,7 @@ const Pricing = () => {
 								Обрати
 							</button>
 						</a>
-					</div>
+					</div> */}
 
 					{/* <div className='bg-gray-900 p-8 rounded-xl border border-gray-700'>
 						<h3 className='text-xl font-bold mb-4 text-center'>Преміум</h3>
